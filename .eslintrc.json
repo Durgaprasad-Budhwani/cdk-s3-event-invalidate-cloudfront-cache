@@ -146,7 +146,8 @@
       {
         "devDependencies": [
           "**/test/**",
-          "**/build-tools/**"
+          "**/build-tools/**",
+          "src/s3cloudfront-invalidation.lambda.ts"
         ],
         "optionalDependencies": false,
         "peerDependencies": true
