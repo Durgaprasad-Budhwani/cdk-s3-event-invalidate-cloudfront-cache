@@ -21,7 +21,6 @@ export class S3EventInvalidateCloudFrontCache extends Construct {
     console.log('bucket', bucket);
 
     const s3CloudFrontCacheInvalidator = new S3cloudfrontInvalidationFunction(this, `${id}-cloudFront-cache-invalid`, {
-      functionName: `${bucketName}-cloudFront-cache-invalid`,
       timeout: Duration.minutes(15),
     });
 
